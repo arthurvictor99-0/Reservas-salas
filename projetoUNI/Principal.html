@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Salas</title>
+    <link rel="stylesheet" href="css4/style4.css">
+    <script>
+        document.getElementById('reservarBtn').addEventListener('click', function () {
+            window.location.href = 'pagina-desejada.html'; // Redireciona para a página de reservas
+        });
+
+        document.getElementById('relatorioBtn').addEventListener('click', function () {
+            window.location.href = 'Relatorio.html'; // Redireciona para a página de relatórios
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="titlee">Reservas de Salas</h1>
+        </header>
+        <main>
+            <div class="card">
+                <h2>HOME</h2>
+                <h3>Reservas</h3>
+                <a href="pagina-desejada.html">
+                    <button class="btn">RESERVAR SALA</button>
+                </a>
+                <a href="Relatorio.html">
+                    <button class="btn">RELATÓRIOS</button>
+                </a>
+                <div>
+                    <a href="index-login.html">
+                        <p class="voltar">Voltar ao login</p>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+
+.header {
+    background-color: #1F2B50;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.login-container {
+    margin: 50px;
+    background-color: #1F2B50;
+    color: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    margin: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+label {
+    align-self: flex-start;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.forgot-password {
+    text-decoration: none; /* Remove o sublinhado */
+    color: yellow;
+}
+
+.forgot-password:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse */
+    color: #FFD700; /* Tom dourado */
+}
+
+.login-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1F2B50;
+}
+
+.login-button:hover {
+    background-color: #ddd;
+}
+
+.help-text {
+    margin-top: 15px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #ddd;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-button:hover,
+.login-button:active,
+.login-button:focus {
+    background-color: rgb(218, 218, 218) !important;
+    color: #1F2B50 !important;
+    outline: none;
+}
+
+
+

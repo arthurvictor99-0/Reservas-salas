@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Alocação de Salas</title>
+    <link rel="stylesheet" href="css3/style3.css">
+    <script>
+        // Exemplo de como mostrar um relatório com base em um filtro ou ação
+        document.getElementById('gerarRelatorioBtn').addEventListener('click', function () {
+            alert('Relatório gerado com sucesso!');
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="Principal.html">Voltar</a>
+        </div>
+        <header>
+            <h1>Relatório</h1>
+        </header>
+        <main>
+            <h2>Relatório de alocação de salas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Bloco</th>
+                        <th>Sala</th>
+                        <th>Data</th>
+                        <th>Horário</th>
+                        <th>Status</th>
+                        <th>Professor</th>
+                        <th>Alterar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Laboratório 02 - Bloco E</td>
+                        <td>Sala E 208</td>
+                        <td>28/03/2025</td>
+                        <td>19:00 / 21:30</td>
+                        <td class="indisponivel">Indisponível</td>
+                        <td>Henrique</td>
+                        <td><button class="aprovado">Aprovado</button></td>
+                    </tr>
+                    <tr>
+                        <td>Laboratório 02 - Bloco E</td>
+                        <td>Sala E 208</td>
+                        <td>28/03/2025</td>
+                        <td>19:00 / 21:30</td>
+                        <td class="indisponivel">Indisponível</td>
+                        <td>Leonardo</td>
+                        <td><button class="aprovado">Aprovado</button></td>
+                    </tr>
+                    <tr>
+                        <td>Laboratório 02 - Bloco E</td>
+                        <td>Sala E 208</td>
+                        <td>28/03/2025</td>
+                        <td>19:00 / 21:30</td>
+                        <td class="indisponivel">Indisponível</td>
+                        <td>Natasha</td>
+                        <td><button class="negado">Negado</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="nota">*Apenas Coordenador pode alterar</p>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio do formulário
+
+            let usuario = document.getElementById('usuario').value;
+            let senha = document.getElementById('senha').value;
+
+            // Recupera as credenciais salvas no LocalStorage
+            const usuarioSalvo = localStorage.getItem('usuario');
+            const senhaSalva = localStorage.getItem('senha');
+
+            // Verifica se as credenciais estão corretas
+            if (usuario && senha) {
+                if (usuario === usuarioSalvo && senha === senhaSalva) {
+                    alert('Login realizado com sucesso!');
+                    window.location.href = 'Principal.html'; // Redireciona para a página principal
+                } else {
+                    alert('Usuário ou senha incorretos!');
+                }
+            } else {
+                alert('Por favor, preencha todos os campos.');
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Reservas de Salas</h1>
+    </div>
+
+    <div class="login-container">
+        <h2 class="login-title">LOGIN</h2>
+        <p class="subtitle">Coordenadores</p>
+
+        <form id="loginForm">
+            <label for="usuario">Usuário :</label>
+            <input type="text" id="usuario" name="usuario" required placeholder="Usuário">
+
+            <label for="senha">Senha :</label>
+            <input type="password" id="senha" name="senha" required placeholder="Senha">
+
+            <a href="#" class="forgot-password">Esqueceu a senha ?</a>
+
+            <div class="button-container">
+                <a href="Principal.html" class="login-button">Entrar</a>
+            </div>
+        </form>
+
+        <div class="register-link">
+            <p>Não tem uma conta? <a href="cadastro.html" class="register-button">Cadastre-se</a></p>
+        </div>
+
+
+
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>

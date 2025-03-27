@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.container {
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    background: #1c2640;
+    color: white;
+    padding: 15px;
+    margin-top: 0;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+select, input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+button {
+    padding: 10px;
+    width: 48%;
+    border: none;
+    cursor: pointer;
+}
+.cancelar {
+    display: inline-block;
+    padding: 10px 20%;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.reservar {
+    border-radius: 5px;
+    padding: 10px 20%;
+    background: #1c2640;
+    color: white;
+}
+
+#professor, #materia, #bloco, #sala, #data, #horario, #turno{
+    border-radius: 5px;
+}
+
+.date-time-container {
+    display: flex;
+    justify-content: space-between;
+}
+.date-time-container div {
+    width: 48%;
+}
+.alerta {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.alerta-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.alerta-content p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.alerta-content button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    border: none;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.alerta-content button:hover {
+    background: #218838;
+}
+
+

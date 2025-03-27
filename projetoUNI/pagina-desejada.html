@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="css2/style2.css">
+    <script>
+        window.onload = function() {
+            document.getElementById('alerta').style.display = 'none';
+        };
+    
+        function mostrarMensagem() {
+            document.getElementById('alerta').style.display = 'block';
+        }
+        function fecharMensagem() {
+            window.location.href = 'Principal.html';
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div class="header">
+        <a href="Principal.html">Home</a>
+    </div>
+    <h1>Reservas de Salas</h1>
+    <div class="container">
+        <label for="professor">Professor:</label>
+        <select id="professor">
+            <option>Leonardo</option>
+            <option>Thales</option>
+            <option>Vinicius</option>
+            <option>Natasha</option>
+            <option>Jeff</option>
+        </select>
+
+        <label for="materia">Matéria:</label>
+        <select id="materia">
+            <option>Projeto de bancos de dados</option>
+            <option>Design e interface do usuario</option>
+            <option>Redes de Computadores</option>
+            <option>Pensamento Computacional</option>
+            <option>Projeto de objeto direto</option>
+        </select>
+
+        <label for="bloco">Bloco:</label>
+        <select id="bloco">
+            <option>Laboratório 02 - Bloco E</option>
+            <option>Laboratório 03 - Bloco D</option>
+            <option>Laboratório 04 - Bloco F</option>
+            <option>Laboratório 05 - Bloco G</option>
+            <option>Laboratório 06 - Bloco H</option>
+            <option>Laboratório 07 - Bloco I</option>
+        </select>
+
+        <label for="sala">Sala: </label>
+        <select id="sala">
+            <option data-capacidade="40">Piso 2 - Sala E 408</option>
+            <option data-capacidade="35">Piso 2 - Sala D 408</option>
+            <option data-capacidade="50">Piso 2 - Sala F 408</option>
+            <option data-capacidade="30">Piso 2 - Sala G 408</option>
+            <option data-capacidade="45">Piso 2 - Sala H 408</option>
+            <option data-capacidade="38">Piso 2 - Sala I 408</option>
+        </select>
+
+        <label>Capacidade:</label>
+        <p id="capacidade-total">Total de alunos: --</p>
+        <p id="vagas-preenchidas">Vagas preenchidas: --</p>
+        <p id="vagas-disponiveis">Vagas a preencher: --</p>
+
+
+        <div class="date-time-container">
+            <div>
+                <label for="data">Data:</label>
+                <input type="date" id="data">
+            </div>
+            <div>
+                <label for="horario">Horário:</label>
+                <input type="time" id="horario">
+            </div>
+        </div>
+
+        <label for="turno">Turno:</label>
+        <select id="turno">
+            <option>Matutino</option>
+            <option>Noturno</option>
+        </select>
+
+        <div class="button-container">
+            <button class="cancelar" onclick="window.location.href='principal.html'">Cancelar</button>
+            <button class="reservar" onclick="mostrarMensagem()">Reservar</button>
+        </div>
+        
+        <div id="alerta" class="alerta">
+            <div class="alerta-content">
+                <p>Reserva salva com sucesso!</p>
+                <button onclick="fecharMensagem()">OK</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function fecharMensagem() {
+            window.location.href = 'Principal.html';
+        }
+
+        function mostrarMensagem() {
+            document.getElementById("alerta").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

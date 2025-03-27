@@ -1,0 +1,106 @@
+/* Reset de padrões */
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    background-color: #1F2B50;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha os itens ao topo */
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Cabeçalho fixo no topo */
+.header {
+    background-color: #E5E5E5;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #1F2B50;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 4px solid #1F2B50;
+    position: fixed; /* Fixa o cabeçalho no topo */
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+/* Container principal com espaçamento superior para não cobrir o cabeçalho */
+.container {
+    background-color: white;
+    color: #1F2B50;
+    padding: 30px;
+    width: 400px;
+    max-width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 120px; /* Adiciona espaçamento para evitar sobreposição com o cabeçalho */
+}
+
+/* Títulos */
+.titlee {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Cartão */
+.card {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Subtítulo */
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Botões */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1F2B50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #14203A;
+    transform: scale(1.05);
+}
+
+/* Links e texto */
+.voltar {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6C757D;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+
+
